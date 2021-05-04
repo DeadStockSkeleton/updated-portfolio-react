@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-
+import TopNavbar from './components/TopNavbar/TopNavbar'
+import Sidebar from './components/Sidebar/Sidebar'
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import Work from './components/pages/Work';
+import Contact from './components/pages/Contact';
+import "splitting/dist/splitting.css";
+import "splitting/dist/splitting-cells.css";
+import Splitting from "splitting";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    {Splitting()}
+    <Router>
+    <Sidebar/>
+    <div id='main'>
+      <TopNavbar/>
+          <Route exact path='/' component={Home}/>
+          <Route exact path='/about' component={About}/>
+          <Route exact path='/work' component={Work}/>
+          <Route exact path='/contact' component={Contact}/>
     </div>
+      
+    
+    </Router>
+    </>
   );
 }
 
