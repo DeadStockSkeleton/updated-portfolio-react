@@ -3,20 +3,17 @@ function About() {
     <div id="about" className="container section p-4">
         <p class="p-text text-light m-5">
                     Wassup! My name is
-                    I'yana Medlock and I am a 20-year-old
-                    student who is majoring in computer science. I dabble in
+                    I'yana Medlock and I am a 20-year-old, full-stack web-developer and computer science major. I dabble in
                     HTML,
                     Javascript,
                     Java,
                     a bit of python,
                     a smidge of C! I reside in Houston,
-                    Texas, where I attend San Jac Community college and Rice
+                    Texas, where I attend  Rice
                     University Coding Bootcamp. I enjoy creating things such as
                     websites,
                     Chrome extensions, and
-                    Electron apps. I plan to become an
-                    official web-developer then obtaining my bachelor's in computer
-                    science.
+                    Electron apps. 
                 </p>
       <h3 className="text-light border-bottom border-light">Skills </h3>
       

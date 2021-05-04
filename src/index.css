@@ -2,7 +2,6 @@
     font-family: 'Montserrat', sans-serif;
     transition: .3s;
     text-decoration: none;
-    overflow: hidden;
 }
 
 @font-face {
@@ -111,7 +110,6 @@ body {
 
 .section {
     max-height: 100%;
-    overflow: hidden;
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
     animation-duration: 1s;
@@ -221,9 +219,10 @@ body {
     box-shadow: none !important;
 }
 
-#about{
+#about, #work{
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
+    max-height: 85%;
 }
 
 .skill{
@@ -235,7 +234,38 @@ body {
     font-size: 18px;
 }
 
+.prev{
+    border-radius: 50px;
+    height: 25px;
+    width: 25px;
+}
+.work-img{
+        width: inherit;
+    }
+.work-card{
+    background-color: rgb(20, 20, 20);
+    border: none;
+}
 
+.work-card:hover{
+    background-color: rgb(25, 25, 25);
+    border: none;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: rgb(17, 17, 17);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(25, 25, 25);
+  }
+  
 /* mobile */
 @media only screen and (max-width: 600px) {
 

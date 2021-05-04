@@ -2,7 +2,7 @@ import skull from "../../assets/skull.svg";
 import skullLine from "../../assets/skullLine.svg";
 import flameLine from "../../assets/flameLine.svg";
 import flame from "../../assets/flame.svg";
-import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <div id="home" class="section">
