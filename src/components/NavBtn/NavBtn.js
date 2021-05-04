@@ -4,7 +4,8 @@ function NavBtn() {
     const toggleClass = () => {
         setActive(!isActive);
         document.querySelector('.sidebar').classList.toggle('openSidebar')
-      };
+
+    };
   return (
     <button className={isActive ? 'btnActive btn navBtn': 'btn navBtn'}  
     onClick={toggleClass} >
