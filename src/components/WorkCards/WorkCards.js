@@ -1,22 +1,15 @@
-
 function WorkCards(props) {
-    return (
-        <>
-        <a target="_blank" className="text-decoration-none" rel="noreferrer" href={props.link}>
-        <div className="card work-card mb-3 border-0 rounded-0">
-        <div className="row g-0 rounded-0">
-            <div className="col work-card">
-                <div className="card-body">
-                    <h5 className="card-title text-light">
-                        {props.title}
-                    </h5>
-                    <p className="card-text text-muted">{props.desc}</p>
-                </div>
-            </div>
-        </div>
-        </div></a>
-        </>
-    );
-  }
-  
-  export default WorkCards;
+  return (
+      <a className="card work-card border-0" target="_blank" rel="noreferrer" href={props.link}>
+          
+      <img src={props.img} className="card-img border-0 work-img" alt={props.title} />
+      <div className="card-img-overlay border-0">
+        <h5 class="card-title text-light">{props.title}</h5>
+        <p class="card-text text-light">{props.desc}</p>
+      </div>
+    </a>
+    
+  );
+}
+
+export default WorkCards;

@@ -128,7 +128,7 @@ body {
 
 }
 
-.home-text {
+.home-text, .work-text {
     font-family: "TS Block Bold", sans-serif;
     font-size: 100px;
 }
@@ -234,23 +234,13 @@ body {
     font-size: 18px;
 }
 
-.prev{
-    border-radius: 50px;
-    height: 25px;
-    width: 25px;
-}
 .work-img{
         width: inherit;
+        filter: grayscale(1);
     }
-.work-card{
-    background-color: rgb(20, 20, 20);
-    border: none;
-}
 
-.work-card:hover{
-    background-color: rgb(25, 25, 25);
-    border: none;
-}
+
+
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
@@ -265,12 +255,66 @@ body {
   ::-webkit-scrollbar-thumb {
     background-color: rgb(25, 25, 25);
   }
+  .work-top{
+      width: 100%;
+  }
+
+  .work-bottom{
+    width: 100%;
+    height: 40vh;
+        display: flex;
+        overflow: hidden;
+  }
+
+  .work-card{
+
+     width: 50%;
+     height: 100%; 
+     display: flex;
+     flex-direction: column;
+     box-shadow: -1rem 0 3rem rgba(0, 0, 0, 0.232);
+     z-index: 666;
+  }
+
+  .work-card:hover{
+    z-index: 888;
+  }
+  .work-card:hover >.card-img-overlay:hover{
+    opacity: 1;
+}
+  .work-card:hover~.work-card{
+    transform: translateX(435px);
+    z-index: 888;
+}
+
+.work-img:hover{
+    filter: grayscale(0);
+}
+
+
+  .work-card:nth-child(2),.work-card:nth-child(3),
+  .work-card:nth-child(4),.work-card:nth-child(5),
+  .work-card:nth-child(6),.work-card:nth-child(7)
+  ,.work-card:nth-child(8){
+      margin-left: -435px;
+  }
+
   
+  
+   .card-img-overlay{
+       background-color: #0000007a;
+       opacity: 0;
+   }
+
+
+  .card-img-overlay:hover > .work-img{
+      filter: grayscale(0);
+  }
 /* mobile */
 @media only screen and (max-width: 600px) {
 
 
-    .home-text {
+    .home-text, .work-text {
         font-size: 25px;
     }
 
@@ -296,6 +340,32 @@ body {
         font-size: 12px;
     }
     
+    .work-card:nth-child(2),.work-card:nth-child(3),
+    .work-card:nth-child(4),.work-card:nth-child(5),
+    .work-card:nth-child(6),.work-card:nth-child(7)
+    ,.work-card:nth-child(8){
+        margin-left: 0px;
+    }
+    .work-bottom{
+        height: 40vh;
+        height: 100%;
+        overflow-y: scroll;
+        display: block;
+      }
 
+    
 
+      .work-card{
+        margin-bottom: 25px;
+       width: 100%;
+        height: 100%; 
+        box-shadow: -1rem 0 3rem rgba(0, 0, 0, 0.232);
+        z-index: 666;
+     }
+
+     .card-img-overlay{
+        background-color: #0000007a;
+        opacity: 1;
+    }
 }
+
