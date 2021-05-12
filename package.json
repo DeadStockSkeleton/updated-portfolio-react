@@ -1,7 +1,7 @@
 {
   "name": "updated-portfolio-react",
   "version": "0.1.0",
-  "homepage": "https://DeadStockSkeleton.github.io",
+  "homepage": "https://deadstockskeleton.github.io/updated-portfolio-react",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
