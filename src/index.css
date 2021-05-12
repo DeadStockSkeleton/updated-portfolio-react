@@ -306,8 +306,12 @@ body {
        opacity: 0;
    }
 
+   .contact-icon{
+       font-size: 50px;
+   }
 
-  .card-img-overlay:hover > .work-img{
+
+   .work-card:hover > img{
       filter: grayscale(0);
   }
 /* mobile */
@@ -367,5 +371,6 @@ body {
         background-color: #0000007a;
         opacity: 1;
     }
+
 }
 
