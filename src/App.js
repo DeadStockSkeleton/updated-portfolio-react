@@ -16,10 +16,10 @@ function App() {
     <Sidebar/>
     <div id='main'>
       <TopNavbar/>
-          <Route path='/' component={Home}/>
-          <Route path='/about' component={About}/>
-          <Route path='/work' component={Work}/>
-          <Route path='/contact' component={Contact}/>
+          <Route exact path='/' component={Home}/>
+          <Route exact path='/about' component={About}/>
+          <Route exact path='/work' component={Work}/>
+          <Route exact path='/contact' component={Contact}/>
     </div>
       
     

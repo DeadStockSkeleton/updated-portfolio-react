@@ -1,7 +1,7 @@
 {
   "name": "updated-portfolio-react",
   "version": "0.1.0",
-  "homepage": "https://deadstockskeleton.github.io/updated-portfolio-react",
+  "homepage": "https://DeadStockSkeleton.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": [
