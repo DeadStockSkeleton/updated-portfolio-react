@@ -2,7 +2,7 @@
 
 ![ss1](./src/assets/1.png)
 ![ss2](./src/assets/2.png)
-
+[link to portfolio](https://deadstockskeleton.github.io/updated-portfolio-react/)
 ## Available Scripts
 
 In the project directory, you can run:
