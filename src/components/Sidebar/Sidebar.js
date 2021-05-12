@@ -8,29 +8,29 @@ function Sidebar() {
     <>
       <nav  id="sidebar" class="nav sidebar flex-column text-start">
           <div class="links">
-              <Link style={{ textDecoration: 'none' }} to="/">
-          <a href='/' class={cn('link text-decoration-none', {'link active text-decoration-none': location.pathname === '/'})}>
+              <Link class={cn('link text-decoration-none', {'link active text-decoration-none': location.pathname === '/updated-portfolio-react/'})} style={{ textDecoration: 'none' }} to="/updated-portfolio-react/">
+          <span >
             <label>●</label>
             <b>Home</b>
-          </a>
+          </span>
         </Link>
-        <Link style={{ textDecoration: 'none' }} to="/about">
-          <a href='/about' class={cn('link text-decoration-none', {'link active text-decoration-none': location.pathname === '/about'})}>
+        <Link class={cn('link text-decoration-none', {'link active text-decoration-none': location.pathname === '/updated-portfolio-react/about'})} style={{ textDecoration: 'none' }} to="/updated-portfolio-react/about">
+          <span >
             <label>●</label>
             <b>About</b>
-          </a>
+          </span>
         </Link>
-        <Link style={{ textDecoration: 'none' }} to="/work">
-          <a href='/work' class={cn('link text-decoration-none', {'link active text-decoration-none': location.pathname === '/work'})}>
+        <Link class={cn('link text-decoration-none', {'link active text-decoration-none': location.pathname === '/updated-portfolio-react/work'})} style={{ textDecoration: 'none' }} to="/updated-portfolio-react/work">
+          <span >
             <label>●</label>
             <b>Work</b>
-          </a>
+          </span>
         </Link>
-        <Link style={{ textDecoration: 'none' }} to="/contact">
-          <a href='/contact' class={cn('link text-decoration-none', {'link active text-decoration-none': location.pathname === '/contact'})}>
+        <Link class={cn('link text-decoration-none', {'link active text-decoration-none': location.pathname === '/updated-portfolio-react/contact'})} style={{ textDecoration: 'none' }} to="/updated-portfolio-react/contact">
+          <span >
             <label>●</label>
             <b>Contact</b>
-          </a>
+          </span>
         </Link>
           </div>
         
